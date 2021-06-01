@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  margin: 0%;
+}
+
+.main-block {
+  background: rgb(49, 49, 49);
+}
+.blue-block {
+  display: flex;
+  flex-direction: column;
+  background: #0262a8;
+}
+.main-title {
+  font-family: Roboto;
+  font-size: 28px;
+  margin: auto;
+  margin-top: 60px;
+  color: white;
+}
+.blue-block:before {
+  content: "";
+  position: absolute;
+  top: calc(45vh - 10%);
+  height: 40%;
+  width: 100%;
+  background: rgb(49, 49, 49);
+}
+.blue-block:after {
+  content: "";
+  position: absolute;
+  top: calc(45vh - 10.1%);
+  height: 40%;
+  width: 100%;
+  clip-path: polygon(100% 0, 0 0, 50% 38%);
+  background: #0262a8;
+}
+@media only screen and (max-width: 770px) and (min-width: 600px) and (orientation: portrait) {
+  .main-block {
+    height: 100vh;
+  }
+}

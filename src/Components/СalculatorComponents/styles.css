@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.calc {
+  font-family: Roboto;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  width: 720px;
+  height: 360px;
+  background: #282828;
+  border-radius: 8px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 100;
+}
+.calc-count {
+  border-right: 1px solid #404040;
+  width: 50%;
+  margin-top: 34px;
+  margin-bottom: 26px;
+  margin-left: 34px;
+}
+.calc-display {
+  margin-right: 14px;
+  width: 50%;
+  margin-top: 34px;
+  margin-bottom: 26px;
+  margin-left: 34px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.inputs-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 95%;
+  margin-bottom: 0px;
+}
+.inputs {
+  width: 90px;
+  border: none;
+  border-bottom: 1px solid #0078ce;
+  background-color: #282828;
+  color: rgba(255, 255, 255, 0.32);
+}
+.calc-form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 83%;
+}
+#submit {
+  width: 220px;
+  height: 36px;
+  left: 430px;
+  top: 474px;
+  background: #0262a8;
+  border-radius: 2px;
+  color: white;
+  margin-left: 36px;
+  border: none;
+  cursor: pointer;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 12px;
+}
+.sub-title {
+  font-size: 11px;
+  line-height: 12px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.32);
+  width: 234px;
+  align-self: center;
+  margin-top: 16px;
+}
+.display-block {
+  text-align: center;
+}
+.calBlock {
+  font-size: 32px;
+  line-height: 12px;
+  margin-top: 56px;
+}
+.error {
+  color: red;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.select-wrapper {
+  background-color: #282828;
+  display: inline-block;
+  position: relative;
+  width: 180px;
+  height: 30px;
+  border-bottom: 1px solid #0078ce;
+}
+.select-wrapper:after {
+  content: "⊳";
+  position: absolute;
+  transform: scaleX(1.3) rotate(90deg);
+  top: 20%;
+  right: 10px;
+  z-index: 5;
+  color: rgba(255, 255, 255, 0.32);
+  height: 1px;
+  width: 1px;
+}
+.selects {
+  color: rgba(255, 255, 255, 0.32);
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  z-index: 20;
+  width: 100%;
+  height: 30px;
+}
+.selects option {
+  margin: 40px;
+  background: #282828;
+  color: rgba(255, 255, 255, 0.32);
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+@media (max-width: 600px) {
+  .calc {
+    flex-direction: column;
+    width: 298px;
+    height: 709px;
+    border-right: none;
+    margin-top: 0px;
+    z-index: 1;
+  }
+  .calc-count {
+    border-right: none;
+    border-bottom: 1px solid #404040;
+
+    width: 285px;
+    height: 400px;
+    margin-left: 3%;
+  }
+  .inputs-block {
+    flex-direction: column;
+  }
+  .calc-form {
+    margin-top: 10px;
+    justify-content: flex-start;
+  }
+  .inputs {
+    width: 283px;
+
+    height: 40px;
+  }
+  .selects {
+    height: 40px;
+    width: 283px;
+  }
+  .select-wrapper {
+    width: 283px;
+    height: 40px;
+  }
+  .title {
+    width: 283px;
+    margin-bottom: 10px;
+  }
+  #submit {
+    margin-top: 20px;
+  }
+  .main-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .calc-display {
+    margin-right: 1px;
+    width: 95%;
+    margin-top: 0px;
+    margin-bottom: 26px;
+    margin-left: 4px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+}

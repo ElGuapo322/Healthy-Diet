@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.nav-wrapper {
+  background: #0262a8;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  font-family: Roboto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: 60px;
+  color: white;
+  background: #0262a8;
+}
+.nav-title {
+  font-family: Roboto;
+  font-size: 32px;
+  color: white;
+  text-decoration: none;
+  font-weight: normal;
+  transition-property: color;
+  transition-duration: 60ms;
+}
+.nav-title:hover {
+  color: rgb(204, 197, 197);
+}
+.nav-links {
+  align-content: flex-end;
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  font-size: 16px;
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+  transition-property: color;
+  transition-duration: 60ms;
+}
+.nav-link:hover {
+  color: rgb(204, 197, 197);
+}
+.nav-date {
+  margin-top: 10px;
+  margin-left: 12%;
+  font-size: 16px;
+}
+.dropDown-menu {
+  font-family: Roboto;
+  position: absolute;
+  background: rgb(49, 49, 49);
+  color: white;
+  border-radius: 12px;
+  width: 50%;
+  height: 25%;
+  left: 50%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 90%;
+  z-index: 2;
+}
+.dropDown-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+.dropDown-menu-button {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.string {
+  height: 2px;
+  background: white;
+  width: 24px;
+}
+@media (max-width: 600px) {
+  .nav-title {
+    margin-left: 10px;
+  }
+  .nav-wrapper {
+    width: 100%;
+  }
+  .dropDown-menu-button {
+    margin-right: 10px;
+  }
+  .nav-link {
+    margin-top: 16px;
+    width: 100%;
+  }
+}
+@media only screen
+and (max-width: 770px)
+
+and (orientation: portrait) {
+  .navbar{
+    width:90%;
+  }
+}

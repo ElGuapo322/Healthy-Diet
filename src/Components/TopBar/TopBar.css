@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.top-block {
+  position: relative;
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 28px;
+  margin: auto;
+  margin-top: 97px;
+  width: 100%;
+  max-width: 1220px;
+}
+.bar {
+  display: flex;
+  flex-direction: row;
+  margin-top: 53px;
+  justify-content: space-between;
+}
+.image {
+  height: 220px;
+  width: 380px;
+  background-size: cover;
+  background-color: #282828;
+}
+@media only screen and (max-width: 770px) and (orientation: portrait) {
+  .image {
+    width: 220px;
+    height: 140px;
+  }
+  .top-block {
+    width: 90%;
+    margin-top: 120px;
+  }
+}
